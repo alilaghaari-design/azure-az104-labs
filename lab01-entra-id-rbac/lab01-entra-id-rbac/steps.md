@@ -1,7 +1,18 @@
-# Step-by-Step Actions
+# Step-by-Step Configuration
 
-1. Created Azure resource groups for IT and Finance.
-2. Created Entra ID users for each department.
-3. Created security groups.
-4. Assigned RBAC roles to resource groups.
-5. Applied Azure Policy for tagging.
+1. Created resource groups:
+   - rg-it
+   - rg-finance
+
+2. Created Entra ID users:
+   - it.admin@tenant.onmicrosoft.com
+   - finance.user@tenant.onmicrosoft.com
+
+3. Assigned RBAC roles:
+   - IT Admin → Contributor
+   - Finance → Reader
+
+4. Created Azure Policy:
+   - Required resource tagging
+   - Denied public IP creation
+
